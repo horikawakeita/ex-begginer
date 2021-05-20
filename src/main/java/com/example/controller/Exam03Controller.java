@@ -20,11 +20,11 @@ public class Exam03Controller {
 	
 	@RequestMapping("/buy")
 	public String buy(String product1,String product2,String product3) {
-		Integer price1 = Integer.parseInt(product1);
-		Integer price2 = Integer.parseInt(product2);
-		Integer price3 = Integer.parseInt(product3);
-		Integer nonTaxPrice = price1 + price2 + price3;
-		Integer price = (int)(1.1 * nonTaxPrice);
+		int price1 = Integer.parseInt(product1);
+		int price2 = Integer.parseInt(product2);
+		int price3 = Integer.parseInt(product3);
+		int nonTaxPrice = price1 + price2 + price3;
+		int price = (int)(1.1 * nonTaxPrice);
 		application.setAttribute("nonTaxPrice", nonTaxPrice);
 		application.setAttribute("price", price);
 		System.out.println(price);
