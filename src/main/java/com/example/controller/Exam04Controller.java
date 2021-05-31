@@ -22,7 +22,6 @@ public class Exam04Controller {
 
 	@RequestMapping("")
 	public String index() {
-		System.out.println(100000);
 		return "exam04";
 	}
 	
